@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NovaFit — Умное фитнес-приложение</title>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="hero">
+			<div class="container">
+				<nav>
+          <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>          
+					<div class="logo">NovaFit</div>
+					<ul class="nav-links">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#features">Функции</a></li> 
+            <li><a href="#interface">Удобный интерфейс</a></li>
+            <li><a href="#faq">Ваши вопросы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>          
+				</nav>
+
+				<div class="hero-content section-primary">
+					<div class="hero-text">
+						<h1>Фитнес под контролем ИИ</h1>
+						<p>Персональные тренировки и трекинг здоровья в одном приложении</p>
+						<button class="hero-btn">Скачать</button>
+					</div>
+					<div class="hero-image">
+						<img src="assets/images/app.png" alt="Превью приложения" />
+					</div>
+				</div>
+        
+		</header>
+
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Скачивание</h2>
+          <p>Скоро будет доступно на App Store и Google Play</p>
+          <button class="closeModal" id="closeModal">Закрыть</button>
+        </div>
+      </div>
+
+
+				<section class="about section-bg-light" id="about">
+					<div class="container">
+						<h2>Почему NovaFit?</h2>
+						<p class="about-subtitle">
+							Умные технологии, простые решения для здоровья
+						</p>
+
+						<div class="features-grid">
+							<div class="feature-card">
+								<img src="assets/icons/goals.svg" alt="ИИ тренировки" />
+								<h3>ИИ-Тренировки</h3>
+								<p>
+									Адаптивные программы, основанные на твоих целях и активности
+								</p>
+							</div>
+							<div class="feature-card">
+								<img src="assets/icons/statistic.svg" alt="Аналитика бега" />
+								<h3>Точная аналитика</h3>
+								<p>Вся статистика твоих пробежек и прогресс в одном месте</p>
+							</div>
+							<div class="feature-card">
+								<img src="assets/icons/community.svg" alt="Сообщество" />
+								<h3>Сообщество</h3>
+								<p>Поддержка и мотивация от других пользователей NovaFit</p>
+							</div>
+						</div>
+					</div>
+				</section> 
+
+        <section class="features-tabs" id="features"  >
+          <div class="container">
+            <h2 class="section-title">Что внутри NovaFit?</h2>
+            <div class="tabs">
+              <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="training">Тренировки</button>
+                <button class="tab-btn" data-tab="nutrition">Питание</button>
+                <button class="tab-btn" data-tab="analytics">Аналитика</button>
+              </div>
+              <div class="tab-content">
+                <div class="tab-panel active" id="training">
+                  <h3>Индивидуальные тренировки</h3>
+                  <p>NovaFit подбирает тренировки под твой уровень и цели. Занимайся дома или в зале с видеоинструкциями и таймингом.</p>
+                  <img src="assets/images/training.jpg" alt="Тренировки">
+                </div>
+                <div class="tab-panel" id="nutrition">
+                  <h3>Питание и рецепты</h3>
+                  <p>Умное питание без голодания. NovaFit предлагает сбалансированное меню, основанное на твоих предпочтениях.</p>
+                  <img src="assets/images/nutrition.jpg" alt="Питание">
+                </div>
+                <div class="tab-panel" id="analytics">
+                  <h3>Аналитика прогресса</h3>
+                  <p>Следи за результатами с помощью визуальной статистики, графиков и достижений. Мотивация — каждый день.</p>
+                  <img src="assets/images/analytics.jpg" alt="Аналитика">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+
+        <section class="interface" id="interface">
+          <div class="interface-container"> 
+              <img src="/assets/images/main-screen.png" alt="Главный экран приложения" class="interface-screen" />
+              <div class="interface-content">
+                <h3>Быстрый доступ к трекеру и задачам</h3>
+                <p>
+                  Удобный и интуитивно понятный интерфейс, который позволяет моментально увидеть свои текущие задачи, прогресс и планы на день. Всё необходимое под рукой — чтобы вы могли сосредоточиться на важном без лишних кликов.
+                </p>
+            </div>
+          </div>
+        </section>
+        
+        
+        
+        <section class="faq-section" id="faq">
+          <div class="faq-section-container">
+            <h2>Часто задаваемые вопросы</h2>
+        
+            <div class="faq-item">
+              <button class="faq-question">NovaFit — это действительно бесплатно?</button>
+              <div class="faq-answer">
+                <p>
+                  Да, базовая версия NovaFit абсолютно бесплатна и включает доступ к основным тренировкам, статистике и трекеру прогресса. Для более продвинутых функций — таких как персонализированные рекомендации от ИИ, расширенные аналитики и дополнительные планы питания — доступна подписка NovaFit Premium. Это позволяет тебе начать бесплатно, а при желании — перейти на следующий уровень.
+                </p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">Можно ли использовать NovaFit без тренажёров?</button>
+              <div class="faq-answer">
+                <p>
+                  Конечно! Мы специально разработали множество тренировок, которые можно выполнять дома без дополнительного оборудования. Достаточно коврика и немного свободного пространства. Наш ИИ адаптирует упражнения под твой уровень подготовки, поэтому тебе не нужно быть профессионалом или иметь спортивный инвентарь.
+                </p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">На каких устройствах работает NovaFit?</button>
+              <div class="faq-answer">
+                <p>
+                  Приложение будет доступно как на устройствах Android, так и на iOS. Сейчас мы готовим релиз для обеих платформ. Также ты сможешь использовать веб-версию с базовым функционалом, если не хочешь устанавливать приложение.
+                </p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">Как работает ИИ в приложении?</button>
+              <div class="faq-answer">
+                <p>
+                  Искусственный интеллект анализирует твою активность, цели и предпочтения, чтобы подбирать наиболее эффективные тренировки, рацион и советы. Он "обучается" по мере твоего прогресса, корректируя план без необходимости ручного вмешательства. Всё это делает NovaFit похожим на персонального тренера в твоем кармане.
+                </p>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+        
+        
+
+        <section class="reviews-section" id="reviews">
+          <h2>Отзывы наших пользователей</h2>
+          <div class="reviews-slider">
+            <button class="slider-btn prev-btn" aria-label="Предыдущий отзыв">&#10094;</button>
+        
+            <div class="reviews-wrapper">
+              <div class="review-card active">
+                <img src="/assets/images/avatar1.jpg" alt="Аватар Марина" class="review-avatar" />
+                <p class="review-text">
+                  "NovaFit помогла мне не только улучшить форму, но и изменить образ жизни к лучшему!"
+                </p>
+                <h4 class="review-name">Марина, 26 лет</h4>
+              </div>
+        
+              <div class="review-card">
+                <img src="/assets/images/avatar2.jpg" alt="Аватар Алексей" class="review-avatar" />
+                <p class="review-text">
+                  "С помощью NovaFit я начал регулярно бегать и уже вижу прогресс!"
+                </p>
+                <h4 class="review-name">Алексей, 32 года</h4>
+              </div>
+        
+              <div class="review-card">
+                <img src="/assets/images/avatar3.jpg" alt="Аватар Ольга" class="review-avatar" />
+                <p class="review-text">
+                  "Очень удобное приложение с полезными советами и поддержкой сообщества."
+                </p>
+                <h4 class="review-name">Ольга, 29 лет</h4>
+              </div>
+            </div>
+        
+            <button class="slider-btn next-btn" aria-label="Следующий отзыв">&#10095;</button>
+          </div>
+        </section>
+        
+
+
+        <section class="contact-invite" id="contact">
+          <div class="container">
+            <div class="contact-text">
+              <h2>Остались вопросы?</h2>
+              <p>Мы с радостью поможем — просто напишите нам!</p>
+              <button id="openContactModal" class="contact-open-btn">Связаться</button>
+            </div>
+            <div class="contact-image">
+              <img src="/assets/images/contact.jpg" alt="Связь с нами" />
+            </div>
+          </div>
+        </section>
+        
+        <div id="contactModal" class="modal hidden">
+          <div class="modal-overlay" id="contactModalOverlay"></div>
+          <div class="modal-content">
+            <button id="closeContactModal" class="modal-close">&times;</button>
+            <h2>Связаться с нами</h2>
+            <form class="contact-form">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+              <input type="email" name="email" placeholder="Ваш email" required>
+              <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+              <button type="submit" class="contact-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+
+
+        <footer class="footer">
+          <div class="container footer-content">
+            <div class="footer-logo">NovaFit</div>
+        
+            <ul class="footer-nav">
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#features">Функции</a></li>
+              <li><a href="#faq">Ваши вопросы</a></li>
+              <li><a href="#interface">Удобный интерфейс</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+        
+            <p class="footer-copy">&copy; 2025 NovaFit. Все права защищены.</p>
+          </div>
+        </footer>
+        
+        
+        
+			</div>
+	</body>
+
+  <script src="script.js"></script>
+</html>
